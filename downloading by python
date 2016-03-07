@@ -1,0 +1,7 @@
+import urllib.request
+import shutil
+
+url = "link"
+
+with urllib.request.urlopen(url) as response, open('C:\\Users\Mehmet Eren Ekinci\\Desktop\\Yeni Klasör', 'wb') as out_file:
+    shutil.copyfileobj(response, out_file)
